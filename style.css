@@ -1,0 +1,186 @@
+.container {
+    /* height: 100vh; */
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    padding: 3rem 3rem 1rem 3rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Merriweather', serif;
+    font-weight: bolder;
+    margin-top: 0;
+}
+
+p {
+    font-size: 0.9rem;
+    font-family: 'Merriweather', serif;
+}
+
+li {
+    font-size: 0.9rem;
+    font-family: 'Merriweather', serif;
+}
+
+h2 {
+    font-size: 1.1rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #66A7F7;
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 0.8rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.introduction p {
+    font-size: 0.875rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#loc-title {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+#job-title {
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.information > ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+.information > ul > li {
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#loc {
+    font-size: 1.1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a[href] {
+    color: #8BB0FF;
+}
+
+.introduction {
+    /* order: 1; */
+    margin: 0rem 3rem 0rem 0rem;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.experience {
+    /* order: 3; */
+    margin: 0rem 3rem 0rem 0rem;
+    grid-row: span 4;
+    grid-area: 2 / 1 / -3 / 2;
+}
+
+.education {
+    /* order: 7; */
+    margin: 0rem 3rem 0rem 0rem;
+    grid-area: -3 / 1 / -2 / 2;
+}
+
+.information {
+    /* order: 2; */
+    grid-area: 1 / 2 / 2 / -1;
+}
+
+.technical_skills {
+    /* order: 4; */
+    grid-area: 2 / 2 / 3 / -1;
+}
+
+.soft_skills {
+    grid-area: 3 / 2 / 4 / -1;
+}
+
+.work_authorization {
+    /* order: 5; */
+    grid-area: 4 / 2 / 5 / -1;
+}
+
+.certificates {
+    /* order: 6; */
+    grid-area: 5 / 2 / 6 / -1;
+}
+
+.foot {
+    /* order: 8; */
+    grid-column: span 2;
+    grid-area: -2 / 1 / -1 / -1;
+    text-align: center;
+    margin: 1.5rem 0rem 0rem 0rem;
+}
+
+footer p {
+    font-size: 8pt;
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 1.35rem 1.35rem 0.65rem 1.35rem;
+    }
+
+    .container > * {
+        flex-basis: 100%;
+        margin: 0;
+    }
+
+    .introduction {
+        order: 1;
+        text-align: center;
+    }
+    
+    .experience {
+        order: 3;
+    }
+    
+    .education {
+        order: 4;
+    }
+    
+    .information {
+        order: 2;
+        text-align: center;
+    }
+    
+    .technical_skills {
+        order: 5;
+    }
+    
+    .soft_skills {
+        order: 6;
+    }
+    
+    .work_authorization {
+        order: 7;
+    }
+    
+    .certificates {
+        order: 8;
+    }
+    
+    .foot {
+        order: 9;
+        margin: 1.5rem 0rem 0rem 0rem;
+    }
+
+}
